@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://d2qxp514pkcau"]
+
+[ext_resource type="Texture2D" uid="uid://bly4nh1isu716" path="res://GFX/basic-black-icon.png" id="1_3cqkx"]
+
+[node name="BlackCat" type="Sprite2D"]
+texture = ExtResource("1_3cqkx")

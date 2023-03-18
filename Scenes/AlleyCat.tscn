@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://duvo2qgj7wlcx"]
+
+[ext_resource type="Texture2D" uid="uid://twpd8631erc8" path="res://GFX/basic-alley-icon.png" id="1_a7pyg"]
+
+[node name="Alley Cat" type="Sprite2D"]
+texture = ExtResource("1_a7pyg")

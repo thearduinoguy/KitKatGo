@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=3 uid="uid://ft1l01keg1xl"]
+
+[ext_resource type="Script" path="res://Game.gd" id="1_ad46o"]
+[ext_resource type="AudioStream" uid="uid://dji0h0lobmpaa" path="res://Audio/Cat1.mp3" id="2_75qgf"]
+[ext_resource type="AudioStream" uid="uid://fgy8bkhrhi33" path="res://Audio/Cat2.mp3" id="3_bsgbq"]
+[ext_resource type="AudioStream" uid="uid://do1h15lsm2hq6" path="res://Audio/CatPurr2.mp3" id="4_niidc"]
+
+[node name="Board" type="Node2D"]
+script = ExtResource("1_ad46o")
+
+[node name="Cat1" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_75qgf")
+
+[node name="Cat2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_bsgbq")
+
+[node name="CatPurr" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_niidc")
+bus = &"UnPaused"
