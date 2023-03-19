@@ -323,21 +323,4 @@ func find_best_move(grid: Array, size: int, length: int) -> Vector2:
 
 	return best_move
 
-#=================================================================================================
-func evaluate(grid: Array, size: int, length: int) -> int:
-	var score = 0
-
-	for r in range(size):
-		for c in range(size):
-			if grid[r * size + c] == EMPTY:
-				grid[r * size + c] = PLAYER_X
-				if check_winner(grid, size, length) == PLAYER_O:
-					score += 1
-				grid[r * size + c] = PLAYER_O
-				if check_winner(grid, size, length) == PLAYER_X:
-					score += 10  # Increase the score significantly when blocking the opponent's winning move
-				grid[r * size + c] = EMPTY
-
-	return score
-
 
